@@ -24,12 +24,28 @@ body {
 }
 
 .navbox {
-    font-family: cursive;
-    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .navbar-brand {
-    font-family: cursive;
-    font-size: 35px;
+    font-size: 10px;
     font-style: italic;
+    font: 60 70px/0.8 'Great Vibes', Helvetica, sans-serif;
+    text-shadow: 4px 4px 3px #fff;
+}
+
+.nav-link {
+    font: 40 30px/1.2 'Merienda One', Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+    text-shadow: 3px 3px 3px #fff;
+}
+
+.dropdown-item {
+    font: 20 20px/1.2 'Merienda One', Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+    text-shadow: 3px 3px 3px #fff;
+}
+
+button {
+    font: 20 40px/1.2 'Merienda One', Helvetica, sans-serif;
 }
