@@ -1,5 +1,5 @@
 .navbar {
-    padding: 50.5px;
+    padding: 60.5px;
     height: 10px;
 }
 
@@ -11,8 +11,25 @@ body {
     padding: 23.5px;
     border: 10px;
     background-color: whitesmoke;
+    height: 0%;
 }
 
 .carouselbox {
     background-color: whitesmoke;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.navbox {
+    font-family: cursive;
+    font-size: 25px;
+}
+
+.navbar-brand {
+    font-family: cursive;
+    font-size: 35px;
+    font-style: italic;
 }
