@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var search = "cheeseburger";
 var queryURL = `https://api.spoonacular.com/recipes/search?apiKey=22453c33f0b040c98babb5d7cfb70d85&query=${search}&information&number=1`
 
@@ -24,3 +25,5 @@ $.ajax({
 console.log(response);
 
 })
+=======
+>>>>>>> master
