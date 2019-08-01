@@ -10,9 +10,11 @@
 }
 
 .footer {
-    padding: 23.5px;
+    padding: 10px;
     border: 10px;
-    background-image: url();
+    background-image: url(https://envato-shoebox-0.imgix.net/5de1/e94b-4c16-4605-b11f-f524805bc60b/FM7_2954_wide_no_copy.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=700&s=3aa2950356b422dfa8d68ff25d6024c3);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 0%;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -24,6 +26,7 @@
     background-image: url(https://cdn.wallpapersafari.com/68/29/SFrsbG.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 10%;
     top: 0;
     padding-top: 30px;
     padding-bottom: 20px;
@@ -63,4 +66,12 @@ button {
 
 .dropdown-menu {
     background-image: url();
+}
+
+body {
+    background-color: lightskyblue;
+}
+
+.text {
+    background-color: whitesmoke;
 }
