@@ -20,6 +20,8 @@
 </head>
 
 <body>
+
+    <!-- Nav bar begins -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Website Name</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -81,29 +83,45 @@
     </div>
     <!-------------------------------------------------------carousel ends/card begins-------------------------------------------------------------->
 
+    <!--  This will be the opening search form/card -->
+    <div class="col-lg-8 m-5">
+
+        <div id="search-card-body" class="card">
+            <div class="card-body">
+
+                <form role="form">
+                    <div class="form-group">
+                        <label for="recipe-input">What recipe are you looking for?</label>
+                        <input class="form-control" id="recipe-input" type="text">
+                    </div>
+
+                    <button class="btn btn-primary" id="search-recipe" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
 
-    <div class="container">
-        <div class="row">
 
-            <div class="card m-3 col-lg-3">
+    <!-- These are the card bodies/rows -->
+    <div class="container col-lg-12 m-5">
+        <div id="APIcontainer" class="row">
+
+            <div id="APIone-Card" class="card col-lg-3 m-2">
                 <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional
-                        content. This content is a little bit longer.</p>
+                    <p class="card-text">maybe grocery store API?</p>
                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                 </div>
             </div>
 
 
-            <div class="card m-3 col-lg-3">
+            <div id="APItwo-card" class="card col-lg-3 m-2">
                 <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional
-                        content.
+                    <p class="card-text">This will be the recipe.
                     </p>
                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                 </div>
@@ -116,16 +134,16 @@
 
 
 
-    <div class="container">
-        <div class="card m-1">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                    additional
-                    content. This card has even longer content than the first to show that equal height action.
-                </p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    <div class="container col-lg-12 m-5">
+        <div id="youTubeAPI" class="row">
+            <div class="card col-lg-6 m-5">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is where the youtube is going.
+                    </p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
             </div>
         </div>
     </div>
