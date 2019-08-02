@@ -1,4 +1,5 @@
 
+
 $("#search-submit").on("click", function (event) {
     event.preventDefault();
     var search = $("#search-input").val().trim();
@@ -60,3 +61,4 @@ $(".recipe-render").append(newCol);
 // console.log(response);
 
 // })
+
