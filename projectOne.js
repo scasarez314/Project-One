@@ -50,8 +50,8 @@ $("#search-submit").on("click", function (event) {
 
 // on click function 
 
-// var searchID = 635350;
-// var queryURLId = `https://api.spoonacular.com/recipes/${searchID}/information?apiKey=22453c33f0b040c98babb5d7cfb70d85`;
+var searchID = 635350;
+var queryURLId = `https://api.spoonacular.com/recipes/${searchID}/information?apiKey=22453c33f0b040c98babb5d7cfb70d85`;
 
 
 $.ajax({
