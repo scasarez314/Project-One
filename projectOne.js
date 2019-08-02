@@ -1,18 +1,20 @@
-
-
 $("#search-submit").on("click", function (event) {
     event.preventDefault();
     var search = $("#search-input").val().trim();
+    APIrecipe(search);
+})
+
+
+function APIrecipe(search) {
     var queryURL = `https://api.spoonacular.com/recipes/search?apiKey=22453c33f0b040c98babb5d7cfb70d85&query=${search}&information&number=12`
-
-
-
     $.ajax({
         url: queryURL,
         method: "GET"
     }).then(function (response) {
         console.log(response);
         console.log(search);
+
+        $(".recipe-render").empty();
 
         for (var i = 0; i <= response.results.length; i++) {
 
@@ -37,9 +39,7 @@ $("#search-submit").on("click", function (event) {
 
         }
     })
-
-})
-
+}
 
 // 1: {id: 107878, title: "Garlic Chicken", readyInMinutes: 45, servings: 4, image: "garlic-chicken-2-107878.png", …}
 
@@ -81,9 +81,9 @@ $("#search-submit").on("click", function (event) {
 
 
 $(document).on("click", ".dropdown-item", function () {
+    var dynamicText = $(this).text();
 
-
-
+    APIrecipe(dynamicText);
 
 
 });
