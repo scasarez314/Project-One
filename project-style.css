@@ -1,77 +1,77 @@
-.navbar {
-    padding: 60px;
-    height: 10px;
-    background-image: url(https://envato-shoebox-0.imgix.net/5de1/e94b-4c16-4605-b11f-f524805bc60b/FM7_2954_wide_no_copy.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=700&s=3aa2950356b422dfa8d68ff25d6024c3);
-    border: black;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 15px;
-    margin-left: 15px;
-}
-
-.footer {
-    padding: 10px;
-    border: 10px;
-    background-image: url(https://envato-shoebox-0.imgix.net/5de1/e94b-4c16-4605-b11f-f524805bc60b/FM7_2954_wide_no_copy.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=700&s=3aa2950356b422dfa8d68ff25d6024c3);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 0%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 15px;
-    margin-left: 15px;
-}
-
-.carouselbox {
-    background-image: url(https://cdn.wallpapersafari.com/68/29/SFrsbG.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 10%;
-    top: 0;
-    padding-top: 30px;
-    padding-bottom: 20px;
-    border: black;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 15px;
-    margin-left: 15px;
-}
-
-.navbox {
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.navbar-brand {
-    font-size: 10px;
-    font-style: italic;
-    font: 80 87.7px/0.8 'Great Vibes', Helvetica, sans-serif;
-    text-shadow: 5px 5px 5px black;
-}
-
-.nav-link {
-    font: 40 30px/1.2 'Merienda One', Helvetica, sans-serif;
-    color: rgba(0, 0, 0, 0.7);
-    text-shadow: 3px 3px 3px black;
-}
-
-.dropdown-item {
-    font: 20 20px/1.2 'Merienda One', Helvetica, sans-serif;
-    color: rgba(0, 0, 0, 0.7);
-    text-shadow: 3px 3px 3px lightblue;
-}
-
-button {
-    font: 20 40px/1.2 'Merienda One', Helvetica, sans-serif;
-}
-
-.dropdown-menu {
-    background-image: url();
-}
-
-body {
-    background-color: lightskyblue;
-}
-
-.text {
-    background-color: whitesmoke;
-}
+        .navbar {
+            padding: 60px;
+            height: 10px;
+            background-image: url(https://envato-shoebox-0.imgix.net/5de1/e94b-4c16-4605-b11f-f524805bc60b/FM7_2954_wide_no_copy.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=700&s=3aa2950356b422dfa8d68ff25d6024c3);
+            border: black;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-right: 15px;
+            margin-left: 15px;
+        }
+        
+        .footer {
+            padding: 10px;
+            border: 10px;
+            background-image: url(https://envato-shoebox-0.imgix.net/5de1/e94b-4c16-4605-b11f-f524805bc60b/FM7_2954_wide_no_copy.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=700&s=3aa2950356b422dfa8d68ff25d6024c3);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 0%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-right: 15px;
+            margin-left: 15px;
+        }
+        
+        .carouselbox {
+            background-image: url(https://cdn.wallpapersafari.com/68/29/SFrsbG.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 10%;
+            top: 0;
+            padding-top: 30px;
+            padding-bottom: 20px;
+            border: black;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-right: 15px;
+            margin-left: 15px;
+        }
+        
+        .navbox {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        .navbar-brand {
+            font-size: 10px;
+            font-style: italic;
+            font: 70 60px/0.8 'Great Vibes', Helvetica, sans-serif;
+            text-shadow: 5px 5px 5px black;
+        }
+        
+        .nav-link {
+            font: 40 30px/1.2 'Merienda One', Helvetica, sans-serif;
+            color: rgba(0, 0, 0, 0.7);
+            text-shadow: 3px 3px 3px black;
+        }
+        
+        .dropdown-item {
+            font: 20 20px/1.2 'Merienda One', Helvetica, sans-serif;
+            color: rgba(0, 0, 0, 0.7);
+            text-shadow: 3px 3px 3px lightblue;
+        }
+        
+        button {
+            font: 20 40px/1.2 'Merienda One', Helvetica, sans-serif;
+        }
+        
+        .dropdown-menu {
+            background-image: url();
+        }
+        
+        body {
+            background-color: lightskyblue;
+        }
+        
+        .text {
+            background-color: whitesmoke;
+        }
