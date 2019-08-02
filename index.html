@@ -5,14 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title></title>
-    <!-----------------------------Bootstrapcss-------------------------------->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- our CSS Link -->
-    <link rel="stylesheet" href="project-style.css">
-    <!------fonts------->
+    <title>Recipe Hub</title>
+
+    <!--------Bootstrap css------>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!------Google fonts------->
     <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Merienda+One' rel='stylesheet' type='text/css'>
+
+    <!-- our CSS Link -->
+    <link rel="stylesheet" href="project-style.css">
 </head>
 
 <body>
@@ -23,153 +26,44 @@
             <a class="navbar-brand text-danger" href="#">
                 <bold>Recipe Hub</bold>
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link text-warning" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-info" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Another action</a>
+                    <li id="nav-item-dropdown" class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-info" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Favorites</a>
+                        <div id="favorite-buttons" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <!-- <a class="dropdown-item" href="#"></a>
+                                    <div class="dropdown-divider"></div> -->
+
                         </div>
                     </li>
 
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2 form-control-lg" type="search" id="search-input" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-warning my-2 my-sm-0 btn-lg" id="search-submit" type="submit">Search</button>
+                <form id="search-bar-submit" class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2 form-control-lg" type="search" id="search-input"
+                        placeholder="Search" aria-label="Search">
+                    <button class="btn btn-warning my-2 my-sm-0 btn-lg" id="search-submit" type="submit">Search</button>
                 </form>
             </div>
         </nav>
     </div>
+
     <br>
-    <!---------------------------------------------------Nav bar ends/carousel begins----------------------------------------------------->
-    <!-- <div class="carouselbox">
-        <!--Carousel Wrapper-->
-        <!-- <div id="carousel-with-lb" class="carousel slide carousel-multi-item rounded" data-ride="carousel"> -->
-            <!--Controls-->
-            <!-- <div class="controls-top">
-                <a class="btn-floating btn-secondary" href="#carousel-with-lb" data-slide="prev"><i class="far fa-arrow-circle-left"></i></a>
-                <a class="btn-floating btn-secondary" href="#carousel-with-lb" data-slide="next"><i class="far fa-arrow-circle-right"></i></a>
-            </div> -->
-            <!--Indicators-->
-            <!-- <ol class="carousel-indicators">
-                <li data-target="#carousel-with-lb" data-slide-to="0" class="active secondary-color"></li>
-                <li data-target="#carousel-with-lb" data-slide-to="1" class="secondary-color"></li>
-                <li data-target="#carousel-with-lb" data-slide-to="2" class="secondary-color"></li>
-            </ol> -->
-
-            <!--Slides and lightbox-->
-            <!-- <div class="carousel-inner mdb-lightbox" role="listbox"> --> -->
-                <!-- <div id="mdb-lightbox-ui"></div>
-                <!--First slide-->
-                <!-- <div class=" carousel-item active text-center">
-
-                    <figure class="col-md-4 d-md-inline-block">
-                        <a href="#" data-size="1600x1067">
-                            <img src="https://ichef.bbci.co.uk/news/660/cpsprodpb/3DAD/production/_104898751_gettyimages-844466808.jpg" class="img-fluid">
-                        </a>
-                    </figure>
-
-                    <figure class="col-md-4 d-md-inline-block">
-                        <a href="#" data-size="1600x1067">
-                            <img src="" class="img-fluid">
-                        </a>
-                    </figure>
-
-                    <figure class="col-md-4 d-md-inline-block">
-                        <a href="#" data-size="1600x1067">
-                            <img src="" class="img-fluid">
-                        </a>
-                    </figure>
-
-                    <figure class="col-md-4 d-md-inline-block">
-                        <a href="#" data-size="1600x1067">
-                            <img src="" class="img-fluid">
-                        </a>
-                    </figure>
-                </div> -->
-                <!--Second slide Begins-->
-                <!-- <div class="carousel-item text-center">
-
-                    <figure class="col-md-4 d-md-inline-block">
-                        <a href="#" data-size="1600x1067">
-                            <img src="https://ichef.bbci.co.uk/news/660/cpsprodpb/3DAD/production/_104898751_gettyimages-844466808.jpg" class="img-fluid">
-                        </a>
-                    </figure>
-
-                    <figure class="col-md-4 d-md-inline-block">
-                        <a href="#" data-size="1600x1067">
-                            <img src="" class="img-fluid">
-                        </a>
-                    </figure>
-
-                    <figure class="col-md-4 d-md-inline-block">
-                        <a href="#" data-size="1600x1067">
-                            <img src="" class="img-fluid">
-                        </a>
-                    </figure>
-
-                    <figure class="col-md-4 d-md-inline-block">
-                        <a href="#" data-size="1600x1067">
-                            <img src="" class="img-fluid">
-                        </a>
-                </div> -->
-
-                <!--Third slide Begins-->
-                <!-- <div class="carousel-item text-center">
-
-                    <figure class="col-md-4 d-md-inline-block">
-                        <a href="#" data-size="1600x1067">
-                            <img src="https://ichef.bbci.co.uk/news/660/cpsprodpb/3DAD/production/_104898751_gettyimages-844466808.jpg" class="img-fluid">
-                        </a>
-                    </figure>
-
-                    <figure class="col-md-4 d-md-inline-block">
-                        <a href="#" data-size="1600x1067">
-                            <img src="" class="img-fluid">
-                        </a>
-                    </figure>
-
-                    <figure class="col-md-4 d-md-inline-block">
-                        <a href="#" data-size="1600x1067">
-                            <img src="" class="img-fluid">
-                        </a>
-                    </figure>
-
-                    <figure class="col-md-4 d-md-inline-block">
-                        <a href="#" data-size="1600x1067">
-                            <img src="" class="img-fluid">
-                        </a> -->
-                <!-- </div> --> -->
-            <!-- </div>
-        </div>
-    </div> -->
 
     <div class="container">
-        <div class="row recipe-render"></div>
- 
+        <div class="row-recipe-render"></div>
 
-       
-        </div>
-   
-    <!-----------------------------------footer begins----------------------------------------->
+
+
+    </div>
+
+    <!-------footer begins----->
     <br>
     <footer class="page-footer font-small mdb-color darken-3 pt-4">
 
@@ -182,7 +76,9 @@
                 <!--Grid column-->
                 <!-- <div class="col-md-6">
                     <div class="embed-responsive embed-responsive-16by9 mb-4">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/playlist?list=PL8zglt-LDl-iwBHEl3Pw1IhWGp9cfgMrc" allowfullscreen></iframe>
+                        <iframe class="embed-responsive-item"
+                            src="https://www.youtube.com/playlist?list=PL8zglt-LDl-iwBHEl3Pw1IhWGp9cfgMrc"
+                            allowfullscreen></iframe>
                     </div>
                 </div> -->
             </div>
@@ -192,19 +88,22 @@
         </div>
     </footer>
     <br>
+
 </body>
 
-
+<!-- EXTERNAL JAVASCRIPT -->
 <!-- JQuery Link -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
 
-<!---------------------------bootstrapJquery slides move-->
+<!-- PopperJS (for dropdowns) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 
-<!-- Ajax Link -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
-<!---------------------------bootstrapJavaScript slides move--------------------------------->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+<!--bootstrap JS-->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js "></script>
+
+
 <!-- Our JavaScript Link -->
 <script src="projectOne.js "></script>
+
 
 </html>
