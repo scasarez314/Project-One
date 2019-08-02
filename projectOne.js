@@ -1,4 +1,8 @@
 
+$(document).ready(function(){
+    $("#ingredients-h2").hide();
+})
+
 
 $("#search-submit").on("click", function (event) {
     event.preventDefault();
@@ -19,6 +23,7 @@ for (var i = 0; i <= response.results.length; i++){
         var recipesRendered = response.results;
         var title = recipesRendered[i].title;
         var recipeImage = recipesRendered[i].image;
+        var recipeId = recipesRendered[i].id;
 
         // var newRow = $("<div>").addClass("row");
         var newCol = $("<div>").addClass("col-sm-12 col-md-6 col-lg-4");
@@ -27,7 +32,7 @@ for (var i = 0; i <= response.results.length; i++){
         <div class="card-body">
           <h4 class="card-title">${title}</h4>
          
-          <a href="#" class="btn btn-primary d-flex justify-content-center my-recipe">View Recipe</a>
+          <a href="#" data-id="${recipeId}" class="btn btn-primary d-flex justify-content-center my-recipe">View Recipe</a>
         </div>`
 
 newCol.append(newCard);
@@ -48,17 +53,53 @@ $(".recipe-render").append(newCol);
  
 
 
-// on click function 
+$(document).on("click", ".my-recipe", function(event){
+    event.preventDefault();
+var viewRecipeClick = $(this).attr("data-id");
+console.log(viewRecipeClick);
 
-// var searchID = 635350;
-// var queryURLId = `https://api.spoonacular.com/recipes/${searchID}/information?apiKey=22453c33f0b040c98babb5d7cfb70d85`;
+$(".recipe-display").empty();
+$("#ingredients-h2").show();
+var searchID = viewRecipeClick;
+var queryURLId = `https://api.spoonacular.com/recipes/${searchID}/information?apiKey=22453c33f0b040c98babb5d7cfb70d85`;
 
 
-// $.ajax({
-//     url: queryURLId,
-//     method: "GET"
-// }).then(function(response){
-// console.log(response);
+$.ajax({
+    url: queryURLId,
+    method: "GET"
+}).then(function(recipeInfo){
+console.log(recipeInfo);
 
-// })
+
+var instructionsTitle = recipeInfo.title;
+var instructionsSteps = recipeInfo.instructions;
+var recipeInstructionsCard = `<div class="card d-flex justify-content-center mb-3">
+  <div class="card-header">${instructionsTitle}</div>
+  <div class="card-body"><h2>Instructions</h2><p>${instructionsSteps}</p></div>
+   
+  
+</div>`;
+
+
+for (var i=0; i < recipeInfo.extendedIngredients.length; i++){
+   console.log(recipeInfo.extendedIngredients[i].original)
+  
+var ingredients = `<p class="ml-3 mt-3">${recipeInfo.extendedIngredients[i].original}</p>`
+
+
+$(".ingredients-render").append(ingredients);
+
+};
+
+
+
+$(".instructions-render").append(recipeInstructionsCard);
+
+
+
+})
+
+})
+
+
 
