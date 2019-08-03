@@ -49,23 +49,54 @@
                     <input class="form-control mr-sm-2 form-control-lg" type="search" id="search-input"
                         placeholder="Search" aria-label="Search">
                     <button class="btn btn-warning my-2 my-sm-0 btn-lg" id="search-submit" type="submit">Search</button>
+                    <button class="m-1 btn btn-warning my-2 my-sm-0 btn-lg" id="sign-Upbutton" type="submit">Sign
+                        Up</button>
                 </form>
             </div>
         </nav>
     </div>
     <br>
-    
+
     <div class="container recipe-display">
         <div class="row row-recipe-render"></div>
- 
 
-       
+
+
+    </div>
+
+    <div class="instructions-render"></div>
+    <div class="ingredients-render card d-flex justify-content-center">
+        <h2 id="ingredients-h2" class="ml-3">Ingredients</h2>
+    </div>
+    <div class="video"></div>
+
+
+    <div id="user-inputDiv" class="col-lg-8 m-5">
+        <div class="card">
+            <div class="card-header">
+                <h2>Get Connected!</h2>
+            </div>
+
+            <div class="card-body">
+                <form role="form">
+                    <div class="form-group">
+                        <label for="name-input">Name:</label>
+                        <input class="form-control" id="name-input" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="email-input">Email:</label>
+                        <input class="form-control" id="email-input" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone-input">Phone Number (Optional):</label>
+                        <input class="form-control" id="phone-input" type="text">
+                    </div>
+                    <button class="btn btn-primary" id="add-userinfo" type="submit">Submit</button>
+                </form>
+            </div>
         </div>
-   <div class="instructions-render"></div>
-   <div class="ingredients-render card d-flex justify-content-center">
-       <h2 id="ingredients-h2" class="ml-3">Ingredients</h2>
-           </div>
-           <div class="video"></div>
+    </div>
+
     <!-----------------------------------footer begins----------------------------------------->
 
     <br>

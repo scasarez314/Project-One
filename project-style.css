@@ -74,3 +74,9 @@ iframe {
 .video {
     background-color: black;
 }
+#user-inputDiv {
+    display: none;
+}
+#ingredients-h2 {
+    display: none;
+}
