@@ -1,6 +1,7 @@
 
 $(document).ready(function () {
     $("#ingredients-h2").hide();
+
 })
 
 
@@ -9,6 +10,13 @@ $("#search-submit").on("click", function (event) {
     var search = $("#search-input").val().trim();
     APIrecipe(search);
 });
+
+$("#sign-Upbutton").on("click", function (event) {
+    event.preventDefault();
+    $("#user-inputDiv").show();
+
+
+})
 
 
 function APIrecipe(search) {
@@ -98,7 +106,7 @@ $(document).on("click", ".my-recipe", function (event) {
 
         $(".instructions-render").append(recipeInstructionsCard);
 
-      
+
         // $(".row-recipe-render").empty();
 
         var youtube = instructionsTitle + "recipe";
@@ -154,4 +162,4 @@ $("#search-submit").on("click", function (event) {
 $(document).on("click", ".dropdown-item", function () {
     var dynamicText = $(this).text();
     APIrecipe(dynamicText);
- });
+});
