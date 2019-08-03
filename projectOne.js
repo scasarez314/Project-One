@@ -149,4 +149,9 @@ $("#search-submit").on("click", function (event) {
 
     console.log(searchInput);
 
-})
+});
+
+$(document).on("click", ".dropdown-item", function () {
+    var dynamicText = $(this).text();
+    APIrecipe(dynamicText);
+ });
