@@ -64,3 +64,13 @@ button {
 .dropdown-menu {
     background-image: url();
 }
+iframe {
+    width: 640px;
+    height: 360px;
+    margin-left: 20%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+.video {
+    background-color: black;
+}
