@@ -1,6 +1,6 @@
 
 $(document).ready(function () {
-    $("#ingredients-h2").hide();
+
 
 })
 
@@ -17,6 +17,7 @@ $("#sign-Upbutton").on("click", function (event) {
 
 
 })
+
 
 
 function APIrecipe(search) {
