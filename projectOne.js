@@ -10,8 +10,13 @@ function emptyDiv(divname) {
 $("#search-submit").on("click", function (event) {
     event.preventDefault();
     var search = $("#search-input").val().trim();
+    console.log(search);
     emptyDiv($(".row-recipe-render"));
-
+    emptyDiv($(".instructions-render"));
+    emptyDiv($(".ingredients-render"));
+    emptyDiv($(".video"));
+    
+  //  APIrecipe(search);
 
     if (search == "" || search == undefined) {
 
@@ -32,6 +37,7 @@ $("#sign-Upbutton").on("click", function (event) {
 
 
 function APIrecipe(search) {
+    console.log('apiRecipe called with ' + search)
     var queryURL = `https://api.spoonacular.com/recipes/search?apiKey=22453c33f0b040c98babb5d7cfb70d85&query=${search}&information&number=12`
     $.ajax({
         url: queryURL,
@@ -40,10 +46,7 @@ function APIrecipe(search) {
         console.log(response);
         console.log(search);
 
-        $(".recipe-render").empty();
-        $(".instructions-render").empty();
-        $(".ingredients-render").empty();
-        $("#ingredients-h2").empty();
+     
 
         for (var i = 0; i <= response.results.length; i++) {
 
@@ -54,7 +57,7 @@ function APIrecipe(search) {
 
             // var newRow = $("<div>").addClass("row");
             var newCol = $("<div>").addClass("col-sm-12 col-md-6 col-lg-4");
-            var newCard = `<div class="card">
+            var newCard = `<div class="card mb-3">
         <img class="card-img-top" src="${response.baseUri + recipeImage}" style="width:100%; height: 100%;">
         <div class="card-body">
           <h4 class="card-title">${title}</h4>
@@ -71,6 +74,7 @@ function APIrecipe(search) {
     })
 };
 
+
 // 1: {id: 107878, title: "Garlic Chicken", readyInMinutes: 45, servings: 4, image: "garlic-chicken-2-107878.png", …}
 
 
@@ -83,7 +87,7 @@ $(document).on("click", ".my-recipe", function (event) {
     var viewRecipeClick = $(this).attr("data-id");
     console.log(viewRecipeClick);
 
-    $(".recipe-display").empty();
+    $(".row-recipe-render").empty();
     $("#ingredients-h2").show();
     var searchID = viewRecipeClick;
     var queryURLId = `https://api.spoonacular.com/recipes/${searchID}/information?apiKey=22453c33f0b040c98babb5d7cfb70d85`;
