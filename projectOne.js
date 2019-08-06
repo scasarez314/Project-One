@@ -177,6 +177,10 @@ $("#search-submit").on("click", function (event) {
 
 $(document).on("click", ".dropdown-item", function () {
     var dynamicText = $(this).text();
-    APIrecipe(dynamicText);
     emptyDiv($(".row-recipe-render"));
+    emptyDiv($(".instructions-render"));
+    emptyDiv($(".ingredients-render"));
+    emptyDiv($(".video"));
+    APIrecipe(dynamicText);
+  
 });
