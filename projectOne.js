@@ -1,14 +1,25 @@
 
 $(document).ready(function () {
-
-
 })
 
+function emptyDiv(divname) {
+    divname.empty()
+
+}
 
 $("#search-submit").on("click", function (event) {
     event.preventDefault();
     var search = $("#search-input").val().trim();
-    APIrecipe(search);
+    emptyDiv($(".row-recipe-render"));
+
+
+    if (search == "" || search == undefined) {
+
+        console.log('input is empty')
+    } else {
+
+        APIrecipe(search);
+    }
 });
 
 $("#sign-Upbutton").on("click", function (event) {
@@ -163,4 +174,5 @@ $("#search-submit").on("click", function (event) {
 $(document).on("click", ".dropdown-item", function () {
     var dynamicText = $(this).text();
     APIrecipe(dynamicText);
+    emptyDiv($(".row-recipe-render"));
 });
